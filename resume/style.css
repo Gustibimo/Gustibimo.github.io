@@ -95,6 +95,7 @@
       }
       .profile-image-container img {
         width: 100%;
+        left: 3px;
         height: 100%;
         position: absolute;
       }

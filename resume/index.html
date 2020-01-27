@@ -1,317 +1,295 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head>
+    <title>Gusti Bimo Marlawanto</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="en_US" http-equiv="Content-Language">
+    <meta content="Full-Stack Engineer working remotely from Adelaide, Australia. Senior Software Engineer at Mixmax, Head of Development at Vinomofo. Years of experience joining small startups and helping them grow into big ones." name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link id="favicon" rel="shortcut icon" type="image/png">
+    <script id="plausible" src="https://plausible.io/js/p.js" async=""></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-<head>
+    <script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
 
-  <title>Gusti Bimo</title>
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+    <link href="https://www.gustibimo.github.io" rel="canonical">
+    <script>
+      (function (w,d,s,o,f,js,fjs) {
+      w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+      }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      plausible('page')
+    </script>
+  </head>
+  <body data-theme="light" data-gr-c-s-loaded="true">
+    <div class="container">
+      <header>
+        <div class="profile-image-container">
+          <img src="img/circle-cropped.png" alt="Cameron Price-Austin">
+        </div>
+        <h1>Gusti Bimo Marlawanto</h1>
+        <h2>Data Engineer.</h2>
+        <div class="currently-looking-tag">
+          <span class="tag  tag-primary">Currently Looking</span>
+        </div>
+        <nav>
+          <a target="_blank" href="https://linkedin.com/in/gbimomarlawanto" rel="noreferrer noopener nofollow">Linkedin</a>
+          <a target="_blank" href="https://github.com/Gustibimo" rel="noreferrer noopener nofollow">Github</a>
+          <a target="_blank" href="https://stackoverflow.com/users/2864906/gusti-bimo-marlawanto?tab=profile" rel="noreferrer noopener nofollow">Stack Overflow</a>
+          <a target="_blank" href="mailto:gstbimo@gmail.com">Email</a>
+          <button id="theme-button">🌙</button>
+        </nav>
+      </header>
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Gusti Bimo</span>
-      <!-- <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span> -->
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-      </ul>
+      <div class="currently-looking-tag">
+        <span class="tag  tag-primary">About Me</span>
+      </div>
+      <blockquote>
+        Software Engineer working remotely from <a target="_blank" href="https://goo.gl/maps/LXXeJSJ1DGushn1cA" rel="noreferrer noopener nofollow">Ede, Netherlands</a>.
+        Backend Developer at <a target="_blank" href="https://www.happyfresh.com" rel="noreferrer noopener nofollow">HappyFresh</a>, Data Enigneer at
+        <a target="_blank" href="https://www.detikcom.com" rel="noreferrer noopener nofollow">Detikcom</a>. Years of experience joining startups and
+        helping them grow into big ones.
+      </blockquote>
+      <section>
+        <h3>Resume</h3>
+        <div class="resume-item">
+          <h4>
+            Software Engineer
+            <span class="tag  tag-secondary">Full-time</span>
+          </h4>
+          
+          <h5>
+            <a target="_blank" href="https://happyfresh.com" rel="noreferrer noopener nofollow"><img src="img/og-hf2.png"/></a>
+          </h5>
+          <ul>
+            <li>One of the largest startups in Australia</li>
+            <li>As part of four developer in fulfilment product backend team</li>
+            <li>Responsible for key innovations such as shopper n driver API, delivery time slot checker, driver tracking, and GrabFresh sync.</li>
+            <li>Built and scaled high-throughput backend systems.</li>
+            <li>Stack: Java, Ruby-on-Rails, Postgresql, Spring boot, Redis, Elasticsearch, AWS</li>
+          </ul>
+          <p class="resume-item-dates">Aug. 2018 - Now</p>
+        </div>
+        <div class="resume-item">
+          <h4>
+            Big Data Engineer
+            <span class="tag  tag-secondary">Full-time</span>
+          </h4>
+          <h5>
+            <a target="_blank" href="https://www.detikcom.com" rel="noreferrer noopener nofollow"><img src="img/detik-logo.png"/></a>
+          </h5>
+          <ul>
+            <li>One of the largest digital media company in Indonesia</li>
+            <li>Early data engineer in new Big data department, served on both data and backend team</li>
+            <li>Wrote current software platform (Django), supporting over 400 journalist and staff</li>
+            <li>Built fast data process pipeline using streaming data solution </li>
+            <li>Stack: Scala, Spark, PostgreSQL, Elasticsearch, Akka, HDFS, Flume, HBase </li>
+          </ul>
+          <p class="resume-item-dates">Dec. 2016 - May. 2018 </p>
+        </div>
+        <div class="resume-item">
+          <h4>
+            Software Engineer, Mobile Developer
+            <span class="tag  tag-tertiary">Partially Remote</span>
+          </h4>
+          <h5>
+            <a target="_blank" href="https://www.sepulsa.com" rel="noreferrer noopener nofollow"><img src="img/Logo-sepulsa.png"/></a>
+          </h5>
+          <ul>
+            <li>One of the first fintech startups in Indonesia.</li>
+            <li>Early employee, held a junior position during period of rapid growth (from a valuation of $500k to $100m).</li>
+            <li>Wrote Java code for android application, developed new features, fix the bugs, and design new UI.</li>
+            <li>Design UI element for iOS application.</li>
+            <li>Stack: Java, Firebase, Objective-C, Xcode, Android</li>
+          </ul>
+          <p class="resume-item-dates">Sep. 2016 - Dec. 2016 </p>
+        </div>
+      </section>
+      <section class="high-five">
+        <button id="high-five-button">✋</button>
+        <p>Thanks for reading.<br>High five!</p>
+      </section>
     </div>
-  </nav>
 
-  <div class="container-fluid p-0">
+    <script type="text/javascript">
+      // -------------------------------------------------------
+      //  Themes
+      // -------------------------------------------------------
+      //  Simple theme switcher.
+      // -------------------------------------------------------
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Gusti
-          <span class="text-primary">Bimo</span>
-          <span class="mb0">Marlawanto</span>
-        </h1>
-        <div class="subheading mb-5"> Lawickse Allee 5A · Wageningen · 6701AN · (061) 622 3763 ·
-          <a href="mailto:name@email.com">gstbimo@gmail.com</a>
-        </div>
-        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
-          overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall
-          value proposition.</p>
-        <div class="social-icons">
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+      // Set the theme (either light or dark, controlled by a bool `light` flag).
+      const themeButton = document.getElementById('theme-button');
+      function setTheme({ light = true }) {
+        if (light) {
+          document.body.setAttribute('data-theme', 'light');
+          themeButton.innerText = '🌙';
+        } else if (light) {
+          document.body.setAttribute('data-theme', 'dark');
+          themeButton.innerText = '🌞';
+        } else {
+          document.body.setAttribute('data-theme', 'dark');
+          themeButton.innerText = '🌞';
+        }
+      }
 
-    <hr class="m-0">
+      // Toggle the theme when the user clicks the button.
+      function toggleTheme() {
+        setTheme({
+          light: document.body.getAttribute('data-theme') !== 'light'
+        });
+      }
+      themeButton.onclick = toggleTheme;
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+      // Default to the light theme.
+      setTheme({ light: true });
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day,
-              going forward, a new normal that has evolved from generation X is on the runway heading towards a
-              streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
-              offshoring.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">March 2013 - Present</span>
-          </div>
-        </div>
+      // -------------------------------------------------------
+      //  High five
+      // -------------------------------------------------------
+      //  Adapted from https://codepen.io/Balo/pen/yLLrjje
+      // -------------------------------------------------------
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
-              digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information
-              highway will close the loop on focusing solely on the bottom line.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2011 - March 2013</span>
-          </div>
-        </div>
+      // Fire the glitter cannon upon high five.
+      const highFiveButton = document.getElementById('high-five-button');
+      highFiveButton.onclick = () => {
+        fireGlitterCannon();
+      };
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless
-              key performance indicators offline to maximise the long tail. Keeping your eye on the ball while
-              performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
-          </div>
-        </div>
+      // The area the glitter will spread, bottom-centered on the middle of the hand.
+      const GLITTER_AREA_WIDTH = 500;
+      const GLITTER_AREA_HEIGHT = 500;
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
-              users after installed base benefits. Dramatically visualize customer directed convergence without
-              revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
-          </div>
-        </div>
+      // The number of particles to generate per firing.
+      const NUM_PARTICLES = 80;
 
-      </div>
+      // The particle colours (selected randomly).
+      const PARTICLE_COLOURS = ['#ffca57', '#68b0f1', '#5fc383', '#ea86ae'];
 
-    </section>
+      // Fire glitter when the user gives a high-five.
+      function fireGlitterCannon() {
+        // Fire from the center of the hand.
+        const originX = highFiveButton.offsetLeft + highFiveButton.offsetWidth / 2.0;
+        const originY = highFiveButton.offsetTop + highFiveButton.offsetWidth / 2.0;
 
-    <hr class="m-0">
+        // Create and position the canvas.
+        let c = document.createElement('canvas');
+        c.style.position = 'absolute';
+        c.style.left = `${(originX - GLITTER_AREA_WIDTH / 2.0)}px`;
+        c.style.top = `${(originY - GLITTER_AREA_HEIGHT / 2.0)}px`;
+        c.style.pointerEvents = 'none';
+        c.style.width = `${GLITTER_AREA_WIDTH}px`;
+        c.style.height = `${GLITTER_AREA_HEIGHT}px`;
+        c.style.zIndex = -1;
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+        // The actual canvas draw area is multiplied by the device pixel ratio.
+        let ratio = window.devicePixelRatio;
+        c.width = GLITTER_AREA_WIDTH * ratio;
+        c.height = GLITTER_AREA_HEIGHT * ratio;
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
-          </div>
-        </div>
+        // Add it to the document.
+        document.body.appendChild(c);
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
-          </div>
-        </div>
+        // Generate the particles.
+        let particles = [];
+        for(let i = 0; i < NUM_PARTICLES; i++) {
+          particles.push({
+            x: c.width / 2.0,
+            y: c.height / 2.0 + (Math.random() * 30 + 15),
+            radius: rand(3, 8),
+            color: PARTICLE_COLOURS[Math.floor(Math.random() * PARTICLE_COLOURS.length)],
+            rotation: rand(0, 360, true),
+            speed: rand(7, 14),
+            friction: .99,
+            fade: .3,
+            opacity: rand(150, 150, true),
+            yVel: 0,
+            gravity: 0//0.06
+          });
+        }
 
-      </div>
-    </section>
+        const ctx = c.getContext('2d');
+        renderGlitterParticles(particles, c);
+        setTimeout(() => document.body.removeChild(c), 5000);
+      }
 
-    <hr class="m-0">
+      // Render a frame of the particles.
+      function renderGlitterParticles(particles, canvas) {
+        if (document.body.contains(canvas)) {
+          requestAnimationFrame(() => renderGlitterParticles(particles, canvas));
+        }
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        const ctx = canvas.getContext('2d');
+        const width = canvas.width;
+        const height = canvas.height;
+        ctx.clearRect(0, 0, width, height);
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-        </ul>
+        particles.forEach((p, i) => {
+          p.x += p.speed * Math.cos(p.rotation * Math.PI / 180);
+          p.y += p.speed * Math.sin(p.rotation * Math.PI / 180);
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
-      </div>
-    </section>
+          p.opacity -= 0.005;
+          p.speed *= p.friction;
+          p.radius -= p.fade;
+          p.yVel += p.gravity;
+          p.y += p.yVel;
 
-    <hr class="m-0">
+          if (p.opacity < 0 || p.radius < 0) return;
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier
-          and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and
-          kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows,
-          I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements
-          in the front-end web development world.</p>
-      </div>
-    </section>
+          ctx.beginPath();
+          ctx.globalAlpha = p.opacity;
+          ctx.fillStyle = p.color;
+          ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false);
+          ctx.fill();
+        });
 
-    <hr class="m-0">
+        return ctx;
+      }
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
-      </div>
-    </section>
+      // Helper function to generate a random number in a range.
+      function rand(a, b, c) {
+        return parseFloat((Math.random() * ((a ? a : 1) - (b ? b : 0)) + (b ? b : 0)).toFixed(c ? c : 0));
+      }
+    </script>
+  
 
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-</body>
-
-</html>
+</body></html>

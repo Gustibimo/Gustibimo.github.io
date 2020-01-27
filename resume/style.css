@@ -1,0 +1,301 @@
+* {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      body {
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        margin: 0;
+        padding-top: 150px;
+        color: #000;
+        transition: background 150ms ease-in-out;
+      }
+      body[data-theme="dark"] {
+        background: #091a28;;
+        color: #fff;
+      }
+      body[data-theme="dark"] a {
+        border-bottom-color:
+        rgba(255,255,255,0.4);
+      }
+      body[data-theme="dark"] h1,
+      body[data-theme="dark"] h4 {
+        opacity: 1;
+      }
+      body[data-theme="dark"] blockquote {
+        opacity: 0.9;
+      }
+
+      body[data-theme="sepia"] {
+        background: #f1e7d0;
+        color: #433422;;
+      }
+      body[data-theme="sepia"] a {
+        border-bottom-color:
+        rgba(255,255,255,0.4);
+      }
+      body[data-theme="sepia"] h1,
+      body[data-theme="sepia"] h4 {
+        opacity: 1;
+      }
+      body[data-theme="sepia"] blockquote {
+        opacity: 0.9;
+      }
+
+
+      a, a:active, a:visited, a:focus {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: dashed 0.666px rgba(0,0,0,0.4);
+        padding-bottom: 1px;
+      }
+      a:focus, a:hover {
+        border-bottom: solid 0px rgba(0,0,0,0.4);
+        outline: none;
+      }
+      button {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 0;
+        border: none;
+        font-size: inherit;
+        cursor: pointer;
+        background: none;
+        color: #000;
+      }
+      button:focus {
+        outline: none;
+      }
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      header {
+        margin: 0 0 150px;
+        position: relative;
+        padding-left: 87px;
+      }
+      .profile-image-container {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: -12px;
+        left: 0;
+      }
+      .profile-image-container:before {
+        content: '';
+        position: absolute;
+        top: 7.4px;
+        left: 3px;
+        width: 64px;
+        height: 64px;
+        border-radius: 999px;
+        background: #ffca57;
+      }
+      .profile-image-container img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      header nav {
+        position: absolute;
+        right: 0;
+        top: 12px;
+      }
+      header nav a {
+        opacity: 0.666;
+        margin-right: 25px;
+      }
+      h1 {
+        margin: 0 0 1px;
+        font-size: 20px;
+        font-weight: 500;
+        opacity: 0.855;
+      }
+      h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 17px;
+        opacity: 0.535;
+      }
+      h3 {
+        font-size: 13px;
+        opacity: 0.535;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0 0 35px;
+      }
+      h4 {
+        font-size: 17px;
+        font-weight: 500;
+        opacity: 0.855;
+        margin: 0 0 8px;
+      }
+      h5 {
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.666;
+        margin: 0 0 28px;
+      }
+      .currently-looking-tag {
+        margin-bottom: 20px;
+      }
+      .tag {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px 15px;
+        border-radius: 3px;
+        vertical-align: text-top;
+        display: inline-block;
+        white-space: nowrap;
+      }
+      .tag-primary {
+        background: #68b0f1;
+        color: #fff;
+      }
+      .tag-secondary {
+        background: #5fc383;
+        color: #fff;
+      }
+      .tag-tertiary {
+        background: #ea86ae;
+        color: #fff;
+      }
+
+      .tag-fortiary {
+        background: #97c727;
+        color: #fff;
+      }
+      blockquote {
+        margin: 0 0 150px 0;
+        font-size: 32px;
+        line-height: 1.5625em;
+        opacity: 0.666;
+        max-width: 970px;
+        font-weight: 300;
+      }
+      section {
+        margin-bottom: 150px;
+      }
+      .resume-item {
+        margin-bottom: 80px;
+      }
+      .resume-item ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 28px;
+      }
+      .resume-item li {
+        font-size: 17px;
+        opacity: 0.666;
+        margin-bottom: 13px;
+        line-height: 1.4em;
+      }
+      .resume-item-dates {
+        font-size: 15px;
+        opacity: 0.535;
+        margin: 0;
+      }
+      .resume-item .tag {
+        margin-left: 18px;
+      }
+      .high-five {
+        text-align: center;
+      }
+      .high-five button {
+        font-size: 40px;
+        transition: transform 150ms ease-in-out;
+      }
+      .high-five button:active {
+        transform: scale3d(0.9,0.9,0.9);
+      }
+      .high-five p {
+        font-size: 15px;
+        opacity: 0.535;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding-top: 50px;
+        }
+        .container {
+          padding: 0 30px;
+        }
+        header {
+          padding-left: 0;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+        .profile-image-container {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          top: auto;
+          left: auto;
+        }
+        .profile-image-container:before {
+          width: 94px;
+          height: 94px;
+          top: 5px;
+          left: 7px;
+        }
+        header nav {
+          margin-right: -27px;
+          position: static;
+          font-size: 13px;
+        }
+        header nav a {
+          margin-right: 10px;
+          opacity: 0.4;
+        }
+        h2 {
+          display: none;
+        }
+        h3 {
+          font-size: 11px;
+        }
+        h4 {
+          font-size: 15px;
+          padding-top: 30px;
+          position: relative;
+        }
+        h5 {
+          font-size: 14px;
+        }
+        .currently-looking-tag {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .tag {
+          padding: 4px 11px;
+        }
+        blockquote {
+          text-align: center;
+          font-size: 17px;
+          margin-bottom: 50px;
+        }
+        section {
+          margin-bottom: 50px;
+        }
+        .resume-item {
+          margin-bottom: 50px;
+        }
+        .resume-item li {
+          font-size: 14px;
+        }
+        .resume-item-dates {
+          font-size: 13px;
+        }
+        .resume-item .tag {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 0;
+        }
+        .high-five p {
+          font-size: 13px;
+          margin: 0;
+        }
+      }

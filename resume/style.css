@@ -31,7 +31,7 @@
       }
       body[data-theme="sepia"] a {
         border-bottom-color:
-        rgba(255,255,255,0.4);
+        rgba(24, 24, 22, 0.568);
       }
       body[data-theme="sepia"] h1,
       body[data-theme="sepia"] h4 {
@@ -43,11 +43,13 @@
 
 
       a, a:active, a:visited, a:focus {
-        color: inherit;
+        color:#4433ff;
         text-decoration: none;
         border-bottom: dashed 0.666px rgba(38, 0, 255, 0.4);
         padding-bottom: 1px;
       }
+  
+   
       a:focus, a:hover {
         border-bottom: solid 0px rgba(0,0,0,0.4);
         outline: none;

@@ -84,22 +84,31 @@
         height: 70px;
         top: -12px;
         left: 0px;
+        margin-bottom: 5px;
       }
       .profile-image-container:before {
         content: '';
         position: absolute;
         top: 7.4px;
         left: 3px;
-        width: 64px;
-        height: 64px;
+        width: 65px;
+        height: 65px;
         border-radius: 999px;
         background: #ffca57;
         /* background: #7cc0ee; */
       }
+      .company img {
+        width: 100px;
+        margin-top: 0%;
+
+      }
+      .company a {
+        height: 0px;
+      }
       .profile-image-container img {
         width: 100%;
-        left: 2.44px;
-        top: -2px;
+        left: 0.5px;
+        top: 1px;
         height: 100%;
         position: relative;
       }
@@ -131,6 +140,7 @@
         text-transform: uppercase;
         margin: 0 0 35px;
       }
+      
       h4 {
         font-size: 17px;
         font-weight: 500;
@@ -182,6 +192,12 @@
       }
       section {
         margin-bottom: 150px;
+      }
+      .who {
+        margin-bottom: 5px;
+      }
+      .title {
+        margin-bottom: 2px;
       }
       .resume-item {
         margin-bottom: 80px;
@@ -274,7 +290,7 @@
           margin-bottom: 10px;
         }
         .tag {
-          padding: 4px 11px;
+          padding: 0px 11px;
         }
         blockquote {
           text-align: center;

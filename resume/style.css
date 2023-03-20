@@ -106,10 +106,10 @@
         height: 0px;
       }
       .profile-image-container img {
-        width: 100%;
-        left: 0.5px;
-        top: 1px;
-        height: 100%;
+        width: 90%;
+        left: 5px;
+        top: 9px;
+        height: 90%;
         position: relative;
       }
       header nav {
